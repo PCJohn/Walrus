@@ -79,9 +79,10 @@ nn = Classifier(
     verbose=True)
 
 #train(nn, X_train, Y_train, './model', n_epoch=100, save_part=5)
+#train(nn, X_train, Y_train, './skt_again', n_epoch=100, save_part=5)
 
 #-----TESTING-----#
-nn = pickle.load(open('./model','r'))
+nn = pickle.load(open('./skt_again','r'))
 print 'Network loaded'
 print nn
 print '--------'
